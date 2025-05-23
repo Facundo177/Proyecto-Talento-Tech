@@ -1,0 +1,281 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0ac5;
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+    width: 100vw;
+    max-width: 100%;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+}
+
+.navbar {
+    z-index: 200;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+    padding: 0.5rem 2rem;
+    background-color: hsl(180, 100%, 97%);
+
+
+}
+
+.navbar a {
+    font-weight: 500;
+    color: #0a0a0a;
+    padding: 5px 2px;
+}
+
+.nav-logo {
+    margin-right: auto;
+    /* background-color: hsl(56, 100%, 50%); */
+    padding: 10px 10px 5px 10px;
+    border-radius: 20%;
+}
+
+.nav-svg-logo {
+    width: 50px;
+}
+
+.nav-svg-shop {
+    width: 30px;
+}
+
+
+.navbar .nav-shopping-cart {
+    /* background-color: hsl(34, 57%, 80%); */
+    padding: 10px 8px 5px 8px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px;
+}
+
+.hero {
+    height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.hero-container {
+    position: relative;
+    height: 100%;
+}
+
+.hero-picture {
+    height: 100%;
+}
+
+.hero-picture img {
+    min-height: 100%;
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: fit-content;
+    position: absolute;
+
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+
+    padding: 0 10px 10px 10px;
+}
+
+.hero-title::before {
+    box-sizing: content-box;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    right: -10px;
+    bottom: -20px;
+    left: -10px;
+    border: solid 1.5em transparent;
+    background-color: rgba(10, 10, 10, 0.1);
+    box-shadow: 0px 0px 5px rgba(10, 10, 10, 0.1);
+    backdrop-filter: blur(3px);
+}
+
+
+.hero-title h1 {
+    font-size: calc(3rem + 1vw);
+    text-shadow: 2px 2px 3px #0a0a0a;
+}
+.hero-title h1:hover {
+    color: hsl(59, 100%, 84%);
+}
+
+.hero-title h2 {
+    font-size: calc(1.5rem + 0.5vw);
+    text-shadow: 2px 2px 3px #0a0a0a;
+}
+.hero-title h2:hover {
+    color: hsl(59, 100%, 84%);
+}
+
+.products {
+    padding: 1rem;
+}
+
+.products-title {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.products-title h2 {
+    color: hsl(60, 100%, 65%);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.7rem;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.product-card {
+    /* border: white solid; */
+    max-width: 500px;
+    min-height: 550px;
+    border-radius: 7%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+
+    align-items: center;
+    background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+.product-card:hover {
+    transform: scale(1.02);
+    background-color: hsla(0, 0%, 100%, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+.product-card h3 {
+    margin: auto;
+}
+
+.product-card p {
+    padding: 0 1.6rem 1rem;
+}
+
+.about {
+    padding: 4rem;
+}
+
+.about-title {
+    margin: 1.5rem 0 0;
+    font-size: 1.7rem;
+}
+
+.about-content {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+.about-content p{
+    margin: 1rem 0;
+}
+
+
+.footer{
+    padding: 2rem 3rem;
+    background-color: hsl(180, 100%, 97%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer-section{
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #0a0a0ac5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+.footer-section h5{
+    margin: 0.1rem 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #0a0a0ac5;
+    display: flex;
+    flex-direction: column;
+}
+.footer-section svg{
+    width: 1.2rem;
+    transform: translateY(2px);
+}
+.footer-section a{
+    color: rgb(32, 25, 116);
+    padding: .2rem 0;
+}
+.oculto{
+    display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
+
+    .hero-title {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        padding: 0 10px 10px 10px;
+    }
+
+    .oculto{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
