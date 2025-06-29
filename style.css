@@ -18,6 +18,8 @@ html {
 
 }
 
+
+
 a {
     text-decoration: none;
 }
@@ -72,6 +74,19 @@ main {
     padding: 10px 8px 5px 8px;
     border-radius: 50%;
     box-shadow: 1px 1px 2px;
+}
+
+.nav-shopping-cart-number{
+    width: 20px;
+    height: 20px; 
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    z-index: 1000;
+    font-size: 0.8rem;  
+    text-align: center;
+    transform: translate(-5px, 15px);  
 }
 
 .hero {
@@ -198,6 +213,23 @@ main {
     padding: 0 1.6rem 1rem;
 }
 
+.product-btn-agregar {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+    background-color: hsl(180, 100%, 97%);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px 7px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
 .about {
     padding: 4rem;
 }
@@ -254,6 +286,7 @@ main {
 .oculto{
     display: none;
 }
+
 
 
 

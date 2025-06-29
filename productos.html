@@ -7,6 +7,7 @@
     <title>PreEntrega TechStore</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="productos.css">
 </head>
 
 <body>
@@ -20,9 +21,9 @@
                         d="M384 96l0 224L64 320 64 96l320 0zM64 32C28.7 32 0 60.7 0 96L0 320c0 35.3 28.7 64 64 64l117.3 0-10.7 32L96 416c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-74.7 0-10.7-32L384 384c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L64 32zm464 0c-26.5 0-48 21.5-48 48l0 352c0 26.5 21.5 48 48 48l64 0c26.5 0 48-21.5 48-48l0-352c0-26.5-21.5-48-48-48l-64 0zm16 64l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm-16 80c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16zm32 160a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
                 </svg>
             </picture>
-            <a href="#hero">Home</a>
-            <a href="./productos.html">Tienda</a>
-            <a href="#acerca">Acerca de</a>
+            <a href="./index.html">Home</a>
+            <a href="#productos">Tienda</a>
+            <a href="./index.html#acerca">Acerca de</a>
             <a href="#footer">Contacto</a>
             <a href="./carrito.html" class="nav-shopping-cart">
                 <svg class="nav-svg-shop" xmlns="http://www.w3.org/2000/svg"
@@ -38,82 +39,36 @@
 
     <main>
 
-        <section id="hero" class="hero">
-            <div class="hero-container">
-
-                <picture class="hero-picture">
-
-                    <source srcset="./images/pexels-jakubzerdzicki-32150913-big.jpg" media="(max-width: 2000px)" />
-                    <img src="./images/pexels-jakubzerdzicki-32150913-very-big.jpg" alt="Hero page">
-                </picture>
-
-                <div class="hero-title">
-                    <h1>
-                        Las mejores ofertas en tecnología
-                    </h1>
-                    <h2>
-                        ¡Aprovechá descuentos de hasta un 70% en productos seleccionados!
-                    </h2>
-                </div>
-
-            </div>
-        </section>
-
-
         <section id="productos" class="products">
 
             <div class="products-title">
                 <h2>
-                    Revisa nuestros productos destacados
+                    Celulares
                 </h2>
             </div>
 
-            <div class="products-container">
-
-                <!-- cargo los productos de forma dinámica a través de JavaScript -->
-
+            <div class="products-container" id="celulares">
+                <!-- con js -->
             </div>
 
-        </section>
+            <div class="products-title">
+                <h2>
+                    Notebooks
+                </h2>
+            </div>
 
+            <div class="products-container" id="notebooks">
+                <!-- con js -->
+            </div>
 
-        <section id="acerca" class="about">
+            <div class="products-title">
+                <h2>
+                    Tablets
+                </h2>
+            </div>
 
-            <h3 class="about-title">
-                Acerca de TechStore
-            </h3>
-
-            <div class="about-content">
-                <p>
-                    En TechStore, nos apasiona la innovación y la tecnología. Desde nuestra creación, hemos
-                    dedicado nuestro esfuerzo a ofrecer a nuestros clientes las mejores soluciones en gadgets,
-                    dispositivos
-                    electrónicos y accesorios de última generación. Nuestra misión es facilitar el acceso a productos
-                    tecnológicos de calidad, confiables y a precios competitivos, para que puedas mantenerte siempre a
-                    la
-                    vanguardia.
-                </p>
-
-                <p>
-                    Contamos con un equipo de expertos en tecnología que te asesorará en cada paso, asegurando que
-                    encuentres exactamente lo que necesitas para potenciar tu vida personal y profesional. Nos
-                    enorgullece
-                    brindar un servicio cercano, transparente y eficiente, porque para nosotros, la satisfacción del
-                    cliente
-                    es lo más importante.
-                </p>
-
-                <p>
-                    En TechStore, la innovación no se detiene. Continuamos ampliando nuestro catálogo con las
-                    últimas novedades del mercado, para que puedas descubrir y adquirir las mejores soluciones
-                    tecnológicas
-                    en un solo lugar.
-                </p>
-
-                <p>
-                    ¡Gracias por confiar en nosotros y formar parte de la familia TechStore!
-                </p>
-
+            <div class="products-container" id="tablets">
+                <!-- con js -->
             </div>
 
         </section>
@@ -162,7 +117,10 @@
 
 
 
-    <script src="./index.js"></script>
+
+
+
+    <script src="./productos.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

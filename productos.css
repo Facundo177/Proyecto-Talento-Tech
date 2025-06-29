@@ -1,0 +1,25 @@
+body{
+    padding-top: 75px;
+}
+
+.precio {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.product-card h3{
+    font-size: 1.4rem;
+    padding: 0.4rem;
+}
+
+.product-card img {
+    height: auto;
+}
+
+
+@media screen and (max-width: 600px) {
+    body{
+        padding-top: 0;
+    }
+
+}
